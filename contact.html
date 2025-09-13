@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar Menu -->
   <nav id="menu">
     <header class="major"><h2>Menu</h2></header>
     <ul>
@@ -20,15 +19,24 @@
     </ul>
   </nav>
 
-  <!-- Contact Section -->
-  <section style="margin-left:200px; padding:2em;">
-    <header class="major"><h2>Contact Me</h2></header>
-    <ul class="contact">
-      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:davidtrevino0630@utexas.edu">davidtrevino0630@utexas.edu</a></li>
-      <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/davidtrevino">LinkedIn</a></li>
-      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/dtrevino0630">GitHub</a></li>
-      <li><i class="fa-solid fa-phone"></i> (281) 466-9609</li>
-    </ul>
-  </section>
+  <main>
+    <section>
+      <header class="major"><h2>Contact Me</h2></header>
+      <p>You can reach me via email or connect on LinkedIn/GitHub:</p>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:davidtrevino0630@utexas.edu">davidtrevino0630@utexas.edu</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/david-trevino" target="_blank">LinkedIn</a></li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/DavidTrevino" target="_blank">GitHub</a></li>
+      </ul>
+
+      <!-- Optional Contact Form -->
+      <form action="mailto:davidtrevino0630@utexas.edu" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
