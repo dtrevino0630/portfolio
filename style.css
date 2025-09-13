@@ -12,42 +12,21 @@ body {
   line-height: 1.6;
 }
 
-/* === Work in Progress Banner === */
-#work-in-progress {
-  background: #ffecb3;
-  color: #8a6d3b;
-  text-align: center;
-  padding: 0.7em;
-  font-weight: bold;
-  font-size: 1rem;
-  border-bottom: 2px solid #f0c36d;
-}
-
-/* === Sidebar Menu -> Top Menu === */
+/* === Top Navigation === */
 #menu {
   background: #002b5c;
-  padding: 1rem;
-  width: 100%;
-  min-height: auto;
-  float: none;
-  text-align: center;
-}
-
-#menu h2 {
-  display: none; /* hide header since horizontal menu is clear */
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-#menu ul li {
-  margin: 0;
+  list-style: none;
+  gap: 2em;
 }
 
 #menu ul li a {
@@ -55,6 +34,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: 0.2s;
+  font-size: 1rem;
 }
 
 #menu ul li a:hover,
@@ -63,26 +43,32 @@ body {
   font-weight: bold;
 }
 
-/* === Hero Banner === */
+/* === Page Titles === */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #002b5c;
+  margin: 2em 0 1em 0;
+}
+
+/* === Hero / Banner === */
 #banner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 3em 1rem;
+  padding: 3em 2em;
   background: #f4f8ff;
-  margin-left: 0; /* remove sidebar offset */
-  gap: 2rem;
-  text-align: center;
 }
 
 #banner .content {
   max-width: 600px;
+  margin: 1em;
 }
 
 #banner h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
   color: #002b5c;
 }
 
@@ -101,26 +87,7 @@ body {
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* === Highlights Section === */
-#highlights {
-  background: #f5f5f5;
-  padding: 2rem 1rem;
-  border-radius: 10px;
-  max-width: 700px;
-  margin: 2rem auto;
-}
-
-#highlights h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-#highlights ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  color: #333;
+  margin: 1em;
 }
 
 /* === Buttons === */
@@ -144,12 +111,12 @@ body {
   font-size: 1.1rem;
 }
 
-/* Projects Grid */
+/* === Features Grid === */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5em;
-  margin-top: 1.5em;
+  gap: 2em;
+  margin: 2em 3%;
 }
 
 .features article {
@@ -170,7 +137,36 @@ body {
   color: #2c3e50;
 }
 
-/* Contact Section */
+.features article p {
+  color: #555;
+  margin-top: 0.5em;
+}
+
+/* === Contact / Resume / Competitions Cards === */
+.resume-card, .contact-card, #competitions .features article {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resume-card:hover, .contact-card:hover, #competitions .features article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.resume-card h3, #competitions .features article h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+  font-size: 1.3em;
+}
+
+/* === Contact Info === */
 ul.contact {
   list-style: none;
   padding: 0;
@@ -186,45 +182,7 @@ ul.contact li i {
   color: #0077cc;
 }
 
-/* Resume Page Styling */
-.resume-card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.resume-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.resume-card h3 {
-  margin-top: 0;
-  color: #2c3e50;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.3em;
-  margin-bottom: 0.8em;
-  font-size: 1.3em;
-}
-
-.resume-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.resume-card ul li {
-  margin-bottom: 0.6em;
-}
-
-.resume-card i {
-  margin-right: 0.5em;
-  color: #0077cc;
-}
-
-/* Download Resume Button */
+/* === Download Resume Button === */
 .download-btn {
   display: inline-block;
   background: #0077cc;
@@ -242,47 +200,36 @@ ul.contact li i {
   transform: translateY(-2px);
 }
 
-.download-btn i {
-  margin-right: 0.4em;
+/* === Work in Progress Banner === */
+#work-in-progress {
+  background: #ffecb3;
+  color: #8a6d3b;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid #f0c36d;
 }
 
-/* === Competitions Cards Styling (matches Projects) === */
-#competitions .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5em;
-  margin-top: 1.5em;
-}
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  #banner {
+    flex-direction: column;
+    text-align: center;
+  }
 
-#competitions .features article {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+  #banner img {
+    margin: 1em 0 0 0;
+  }
 
-#competitions .features article:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
+  .features {
+    margin: 2em 5%;
+    gap: 1.5em;
+  }
 
-#competitions .features article h3 {
-  margin-top: 0.5em;
-  color: #2c3e50;
-}
-
-/* Optional images inside each card */
-#competitions .project-images {
-  margin-top: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-}
-
-#competitions .project-images img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  #menu ul {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
 }
