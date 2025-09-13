@@ -245,3 +245,23 @@ ul.contact li i {
   color: #0056b3;        /* Optional: color change on hover */
   text-decoration: none; /* Keep it no underline on hover */
 }
+
+/* Make competition cards match project cards style */
+#competitions .features article {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1em;
+}
+
+#competitions .features article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#competitions .features article h3 {
+  margin-top: 0.5em;
+  color: #2c3e50;
+}
