@@ -233,3 +233,15 @@ ul.contact li i {
     text-align: center;
   }
 }
+
+/* Remove link color and underline for project links */
+.project-link {
+  color: inherit;        /* Use the text color of the container */
+  text-decoration: none; /* Remove underline */
+  display: block;        /* Makes the whole card clickable */
+}
+
+.project-link:hover {
+  color: #0056b3;        /* Optional: color change on hover */
+  text-decoration: none; /* Keep it no underline on hover */
+}
