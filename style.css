@@ -266,15 +266,3 @@ ul.contact li i {
   color: #2c3e50;
 }
 
-/* Push main content to the right of sidebar */
-main {
-  margin-left: 200px; /* same width as sidebar */
-  padding: 2em;       /* spacing around content */
-}
-
-/* Optional: section spacing */
-.content-section {
-  max-width: 900px;
-  margin: 0 auto; /* center the content within main */
-}
-
