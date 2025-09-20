@@ -395,3 +395,14 @@ article a {
 article a:hover {
   text-decoration: underline;
 }
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
