@@ -3,12 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swamp Thrills Photos | David Trevino</title>
+  <title>Walt Disney Imagineering 2025 Imaginations Photos | David Trevino</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    figure {
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+
+    .subgallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .subgallery img {
+      width: 30%;
+      border-radius: 6px;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+  </style>
+
 </head>
+
 <body style="background-color:#f0f6ff;">
 
-  <!-- Top Navigation -->
+  <!-- Navigation -->
   <nav id="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -20,47 +63,80 @@
   </nav>
 
   <main class="content-section">
-    <h2>Swamp Thrills Theme Park Competition | Photo Gallery</h2>
 
+    <h2>Walt Disney Imagineering 2025 Imaginations Competition | Gallery</h2>
+
+    <!-- ================= VIDEOS ================= -->
+    <h3>Videos</h3>
     <div class="gallery">
+
       <figure>
-        <img src="images/Vehicle_Straight.jpg" alt="Straight Line of Vehicles">
-        <figcaption>Straight Line of 3D Modeled Vehicle (using SOLIDWORKS) with doors open on front car.</figcaption>
+        <video controls>
+          <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+        <figcaption>Vehicle animation walkthrough</figcaption>
       </figure>
 
       <figure>
-        <img src="images/Vehicle_Side.jpg" alt="Single Vehicle Design">
-        <figcaption>Close up side view of Ride Vehicle. All parts were 3D modeled by myself using reference images for inspiration.</figcaption>
+        <video controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+        <figcaption>Ride system demonstration</figcaption>
       </figure>
 
-      <figure>
-        <img src="images/Vehicle_Lineup.jpg" alt="Vehicle Rotation">
-        <figcaption>Ride Vehicles rotating to demonstrate ride technology used in our team's attraction. I made each vehicle able to rotate 360 degrees, so I can model it however needed.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/Vehicle_Drawing.jpg" alt="Vehicle Drawing">
-        <figcaption>Vehicle drawing to showcase different perspective in 2D.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/Site_Plan.jpg" alt="Layout">
-        <figcaption>I created the site layout for our attraction and was assited by another team member for the queue layout/accesiility accomendations.</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/NoLimit_Design.jpg" alt="Concept of Section">
-        <figcaption>I created a NoLimits2 simulation to showcase a simplistic design of a section of our attraction (traveling to Japan and going through a alley of stores).</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/NoLimit_Tunnel.jpg" alt="Concept of Tunnel">
-        <figcaption>Another NoLimits2 simulation showcasing a simplisitic design of our attraction (tunnels traveled through to teleport around the world).</figcaption>
-      </figure>
-      
     </div>
 
-    <p><a href="competitions.html" class="button">⬅ Back to Competitions</a></p>
+
+    <!-- ================= BRAINSTORMING ================= -->
+    <h3>Brainstorming & Early Concepts</h3>
+    <div class="gallery">
+
+      <figure>
+        <img src="images/brainstorm1.jpg" alt="Brainstorm Sketches">
+        <figcaption>Initial brainstorming sketches and ideas</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/brainstorm2.jpg" alt="Concept Development">
+        <figcaption>Concept development and early layouts</figcaption>
+      </figure>
+
+    </div>
+
+
+    <!-- ================= FINAL DESIGNS ================= -->
+    <h3>Final Designs</h3>
+    <div class="gallery">
+
+      <!-- FINAL IMAGE 1 (WITH SUB IMAGES) -->
+      <figure>
+        <img src="images/final1.jpg" alt="Final Vehicle Design">
+        <figcaption>Final vehicle design with detailed modeling</figcaption>
+
+        <div class="subgallery">
+          <img src="images/sub1.jpg" alt="">
+          <img src="images/sub2.jpg" alt="">
+          <img src="images/sub3.jpg" alt="">
+          <img src="images/sub4.jpg" alt="">
+          <img src="images/sub5.jpg" alt="">
+          <img src="images/sub6.jpg" alt="">
+          <img src="images/sub7.jpg" alt="">
+        </div>
+      </figure>
+
+      <!-- FINAL IMAGE 2 -->
+      <figure>
+        <img src="images/final2.jpg" alt="Final Render">
+        <figcaption>Final rendered concept of the attraction</figcaption>
+      </figure>
+
+    </div>
+
+
+    <p style="margin-top:40px;">
+      <a href="competitions.html" class="button">⬅ Back to Competitions</a>
+    </p>
+
   </main>
 
 </body>
